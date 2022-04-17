@@ -1,0 +1,122 @@
+/* from 1024 to 1200px */
+
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
+/* small tablet to big tablet from 768 to 1023px */
+
+@media only screen and (max-width: 1023px) {
+  div.value {
+    margin-left: 0;
+    width: 100%;
+  }
+  .long-para-vision {
+    padding-left: 0;
+  }
+  .hero-text-box {
+    width: 100%;
+  }
+  body {
+    font-size: 18px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* small phone to small tablet from 481 to 767px */
+
+@media only screen and (max-width: 767px) {
+  .media-history-right {
+    padding: 0;
+  }
+  .hero-text-box {
+    width: 100%;
+  }
+
+  .value-box div {
+    width: 100%;
+  }
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+}
+
+/* small phone from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+  .contact-form {
+    width: 100%;
+  }
+
+  p.first-line {
+    font-size: 100%;
+  }
+  p.second-line,
+  p.third-line {
+    font-size: 200%;
+  }
+}
+/*👉Navigation responsive👈*/
+
+@media (max-width: 868px) {
+  body.disabledScroll {
+    overflow: hidden;
+  }
+  .menu-list li a:hover:after {
+    opacity: 0;
+  }
+  .icon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .icon.cancel-btn {
+    display: none;
+  }
+  .icon.cancel-btn.show {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .menu-list {
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active {
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a {
+    font-size: 23px;
+  }
+}
